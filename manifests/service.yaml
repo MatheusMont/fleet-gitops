@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: minha-app-service
+  name: trabalho-infnet-service
   namespace: gitops-app
 spec:
   selector:
-    app: minha-app
+    app: trabalho-infnet
   ports:
   - port: 80
     targetPort: 80
