@@ -15,7 +15,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: minha-app-service
+            name: trabalho-infnet-service
             port:
               number: 80
   tls:
