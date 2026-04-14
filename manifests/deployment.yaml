@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: minha-app
+  name: trabalho-infnet
   namespace: gitops-app
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: minha-app
+      app: trabalho-infnet
   template:
     metadata:
       labels:
-        app: minha-app
+        app: trabalho-infnet
     spec:
       containers:
       - name: app
