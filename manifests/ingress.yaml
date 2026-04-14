@@ -21,4 +21,4 @@ spec:
   tls:
   - hosts:
     - minha-app.184.73.247.186.sslip.io
-    secretName: minha-app-tls
+    secretName: trabalho-infnet-tls
