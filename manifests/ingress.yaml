@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: trabalho-infnet.184.73.247.186.sslip.io
+  - host: trabalho-infnet.3.238.21.221.sslip.io
     http:
       paths:
       - path: /
