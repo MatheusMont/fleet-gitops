@@ -1,1 +1,24 @@
-
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: infnet-ingress
+  namespace: gitops-app
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: trabalho-infnet.184.73.247.186.sslip.io
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: minha-app-service
+            port:
+              number: 80
+  tls:
+  - hosts:
+    - minha-app.184.73.247.186.sslip.io
+    secretName: minha-app-tls
